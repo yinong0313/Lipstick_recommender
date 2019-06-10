@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Recommendation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+
+    /* Remove the jumbotron's default bottom margin */
+     .jumbotron {
+      margin-bottom: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Lipstick Recommendation</h1>
+    <p>products you may like...</p>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">{{brand_names[0]}}</div>
+        <a href={{links2[0]}} target="_blank">
+        <div class="panel-body"><img src="{{imgs[0]}}" class="img-responsive" style="width:80%" alt="Image"></div></a>
+        <div class="panel-footer">
+          <div class="text-danger">
+            {{product_names[0]}}</div>
+          <br> Hot Shades:{{hot_shades[0][1:-1]}}
+          </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">{{brand_names[1]}}</div>
+        <a href={{links2[1]}} target="_blank">
+        <div class="panel-body"><img src="{{imgs[1]}}" class="img-responsive" style="width:80%" alt="Image"></div></a>
+        <div class="panel-footer">
+          <div class="text-danger">
+            {{product_names[1]}}</div>
+          <br> Hot Shades:{{hot_shades[1][1:-1]}}
+          </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">{{brand_names[2]}}</div>
+        <a href={{links2[2]}} target="_blank">
+        <div class="panel-body"><img src="{{imgs[2]}}" class="img-responsive" style="width:80%" alt="Image"></div></a>
+        <div class="panel-footer">
+          <div class="text-danger">
+            {{product_names[2]}}</div>
+          <br> Hot Shades:{{hot_shades[2][1:-1]}}
+          </div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">{{brand_names[3]}}</div>
+        <a href={{links2[3]}} target="_blank">
+        <div class="panel-body"><img src="{{imgs[3]}}" class="img-responsive" style="width:80%" alt="Image"></div></a>
+        <div class="panel-footer">
+          <div class="text-danger">
+            {{product_names[3]}}</div>
+          <br> Hot Shades:{{hot_shades[3][1:-1]}}
+          </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">{{brand_names[4]}}</div>
+        <a href={{links2[4]}} target="_blank">
+        <div class="panel-body"><img src="{{imgs[4]}}" class="img-responsive" style="width:80%" alt="Image"></div></a>
+        <div class="panel-footer">
+        <div class="text-danger">
+          {{product_names[4]}}</div>
+        <br> Hot Shades:{{hot_shades[4][1:-1]}}
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">{{brand_names[5]}}</div>
+        <a href={{links2[5]}} target="_blank">
+        <div class="panel-body"><img src="{{imgs[5]}}" class="img-responsive" style="width:80%" alt="Image"></div></a>
+        <div class="panel-footer">
+        <div class="text-danger">
+          {{product_names[5]}}</div>
+        <br> Hot Shades:{{hot_shades[5][1:-1]}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+    <button onclick="goBack()" class="btn btn-danger">Try Again</button>
+
+    <script>
+    function goBack() {
+      window.history.back();
+    }
+    </script>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+flask
+flask-wtf
+jinja2
+pip
+requests
+wtforms
+pandas
+scikit-learn

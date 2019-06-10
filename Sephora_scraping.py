@@ -17,12 +17,10 @@ for i in range(1,6):
 
     product_df = product_df.append(product_df_temp, ignore_index=True)
 
-'''filename = 'product_info_whole.csv'
+filename = 'product_info_whole.csv'
 product_df.to_csv(filename, encoding='utf-8')
 
 
 product_df = pd.read_csv('product_info_whole.csv',index_col = 0)
 ind_review_df = review_details.get_reviews(product_df)
-
-#ind_review_df = ind_review_df[ind_review_df.user_id.notnull()]
-ind_review_df.to_csv('ind_review_whole.csv',encoding='utf-8')'''
+ind_review_df.to_csv('ind_review_whole.csv',encoding='utf-8')
